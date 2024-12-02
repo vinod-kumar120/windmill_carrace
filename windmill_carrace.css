@@ -1,0 +1,181 @@
+.round {
+    width: 400px;
+    height: 600px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-left: 40%;
+}
+
+.hi3 {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 50%;
+    z-index: 2;
+
+}
+
+.blade1 {
+    position: absolute;
+    background-color: grey;
+    width: 400px;
+    height: 20px;
+    border-radius: 80%;
+    transform: rotate(90deg);
+    top: 31%;
+    z-index: 3;
+}
+
+.blade2 {
+    position: absolute;
+    background-color: grey;
+    width: 400px;
+    height: 20px;
+    border-radius: 80%;
+    transform: rotate(180deg);
+    top: 31%;
+    z-index: 4;
+}
+
+.dot {
+    position: absolute;
+    width: 31px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.3;
+    top: 30%;
+    z-index: 5;
+}
+
+.stand {
+    width: 70px;
+    height: 400px;
+    background-color: black;
+    opacity: 0.7;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    position: relative;
+
+    z-index: 1;
+    bottom: 20px;
+}
+
+.gr {
+    width: 400px;
+    height: 50px;
+    background-color: rgb(36, 191, 36);
+
+    position: absolute;
+    z-index: 2;
+    border-top: 50px;
+}
+
+@keyframes blade1 {
+    0% {
+        transform: rotate(90deg);
+    }
+
+
+
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+.blade1 {
+    animation: blade1 1s linear 1s 5 normal;
+}
+
+@keyframes blade2 {
+    0% {
+        transform: rotate(180deg);
+    }
+
+
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.blade2 {
+    animation: blade2 1s linear 1s 5 normal;
+}
+
+
+.race {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+}
+
+.r1 {
+    width: 100%;
+    height: 180px;
+    background-color: red;
+}
+
+.r2 {
+    width: 100%;
+    height: 225px;
+    background-color: lightblue;
+}
+
+.r3 {
+    width: 100%;
+    height: 220px;
+    background-color: rgb(243, 139, 139);
+}
+
+#i1 {
+    width: 230px;
+}
+
+#i3 {
+    width: 222px;
+}
+
+@keyframes r1 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    30% {
+        transform: translate(200px, 0);
+    }
+
+    60% {
+        transform: translate(400px, 0);
+    }
+
+    80% {
+        transform: translate(600px, 0);
+    }
+
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+.r1 {
+    animation: r1 1s linear 1s 5 alternate;
+}
+
+.r2 {
+    animation: r1 1.5s linear 1s 5 alternate;
+}
+
+.r3 {
+    animation: r1 1.8s linear 1s 5 alternate;
+}
